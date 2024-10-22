@@ -1,0 +1,113 @@
+body {
+    background-color: #f9f9f9f9;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+nav {
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+}
+
+hr {
+    border-color: rgb(0, 0, 0);
+}
+#header-nav {
+    color: #ffffff;
+    user-select: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    margin-top: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    line-height: 1.5;
+    margin-left: 20%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+#code {
+    font-size: medium;
+}
+article {
+    text-align: justify;
+    margin: 0 7% 0 7%;
+}
+
+section li {
+    margin: 15px 0px 0px 40px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    justify-content: center;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #ececec;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+    main {
+        margin-left: 25%;
+    }
+}
+@media (max-width: 900px) {
+    main {
+        margin-left: 30%;
+    }
+}
+@media (max-width: 750px) {
+    main {
+        margin-left: 35%;
+    }
+}
+@media (max-width: 650px) {
+    main {
+        margin-left: 35%;
+    }
+
+    article {
+        margin: 0 0 0 7%;
+    }
+}
+@media (max-width: 610px) {
+    nav {
+        display: none;
+        position: relative;              
+    }
+
+    main {
+        margin-left: -7%;   
+    }
+}
