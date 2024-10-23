@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +14,17 @@
             <a href="#introdução">Introdução</a><hr>
             <a href="#informacao">O que você já deve saber</a><hr>
             <a href="#javascriptEJava">JavaScript e Java</a><hr>
-            <a href="hello-world">Olá, mundo</a><hr>
-            <a href="variaveis">Variáveis</a><hr>
-            <a href="declarandoVariaveis">Declarando variáveis</a><hr>
-            <a href="escopoVariavel">Escopo variável</a><hr>
-            <a href="variaveisGlobais">Variáveis globais</a><hr>
-            <a href="constantes">Constantes</a><hr>
-            <a href="tiposDeDados">Tipos de dados</a><hr>
-            <a href="seInstrucaoelse">If... {instrução} else</a><hr>
-            <a href="">instrução while</a><hr>
-            <a href="">Declarações de função</a><hr>
-            <a href="">Referência</a><hr>
+            <a href="#hello-world">Olá, mundo</a><hr>
+            <a href="#variaveis">Variáveis</a><hr>
+            <a href="#declarandoVariaveis">Declarando variáveis</a><hr>
+            <a href="#escopoVariavel">Escopo variável</a><hr>
+            <a href="#variaveisGlobais">Variáveis globais</a><hr>
+            <a href="#constantes">Constantes</a><hr>
+            <a href="#tiposDeDados">Tipos de dados</a><hr>
+            <a href="#seInstrucaosenao">If... {instrução} else</a><hr>
+            <a href="#intrucaoWhile">instrução while</a><hr>
+            <a href="#declaracoesDeFuncao">Declarações de função</a><hr>
+            <a href="#referencia">Referência</a><hr>
         </nav>
 
         <main>
@@ -83,8 +83,8 @@
                     <p>Para começar a escrever JavaScript, abra o bloco de rascunhos e escreva seu primeiro código JavaScript "Hello world": Selecione o código no teclado e pressione Ctrl+R para vê-lo se desdobrar em seu Navegador!</p><br>
 
                     <code>
-                        <p id="code">function digaMeuNome(SeuNome) { alert("Olá " + SeuNome); }
-                        digaMeuNome("World");</p>
+                        <p id="code">function greetMe(yourName) { alert("Hello " + yourName); }
+                            greetMe("World");</p>
                     </code>
                 </article>
             </section>
@@ -284,8 +284,62 @@
                     <code>
                         <p id="code">var n = 0; var x = 0; while (n < 3) { n++; x += n; }</p>
                     </code>
+
+                    <p>A cada iteração, o loop incrementa n e adiciona esse valor a x. Portanto, x e n assumem os seguintes valores:</p>
+                    
+                    <ul>
+                        <li>Após a primeira passagem n = 1 e x = 1</li>
+                        <li>Após a segunda passagem n = 2 2 x = 3</li>
+                        <li>Após a terceira passagem n = 3 e x = 6</li>
+                    </ul><br>
+
+                    <p>Depois de concluir a terceira passagem, a condição n < 3 não é mais <i>true</i>, entã o loop termina.</p>
                 </article>
             </section>
+
+            <br>
+
+            <section id="declaracoesDeFuncao">
+                <article>
+                    <h1>Declarações de funções</h1>
+
+                    <p>Uma definição de função (também chamada de declaração de função ou função) consiste na palavra-chave fuction, seguida por:</p>
+
+                    <ul>
+                        <li>O nome da função.</li>
+                        <li>Uma lista de argumentos para a função, entre parênteses e separados por vírgulas.</li>
+                        <li>As intruções JavaScript que definem uma função, entre chaves {}.</li>
+                    </ul><br>
+
+                    <p>Por exemplo, o código a seguir define uma função simples chamada quadrado: </p>
+
+                    <code>
+                        <p id="code">function square(number) { return number * number; }</p>
+                    </code>
+
+                    <p>A função quadrada recebe um argumento, chamado número. A função consiste em uma instrução que diz para retornar o argumento do função (isto é, número) multiplicado por si mesmo. O retorno especifica o valor retornado pela função.</p>
+
+                    <code>
+                        <p id="code">return number * number;</p>
+                    </code>
+
+                    <p>Parâmetros primitivos (como um número) são passados para funções por valor; o valor é passado para a função, mas se a função altera o valor do parâmtro, essa alteração não é refletida globalmente ou na função de chamada.</p>
+                </article>
+            </section>
+
+            <br>
+
+            <section id="referencia">
+                <article>
+                    <h1>Referência</h1>
+                    
+                    <ul>
+                        <li>Toda a documentação nesta página foi retirada do <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></li>
+                    </ul>
+                </article>
+            </section>
+
+            <br><br><br><br><br>
         </main>
     </div>
 </body>
